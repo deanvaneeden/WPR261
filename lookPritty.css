@@ -93,11 +93,20 @@ section h2 {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 8px;
-    
-
-
-
-
-
-
 }
+
+#printButton {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #800000;
+    color: gold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#printButton:hover {
+    background: #660000;
+}
+
+/*favourites section*/
