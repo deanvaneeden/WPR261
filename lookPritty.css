@@ -69,11 +69,35 @@ section h2 {
 }
 
 /*results section*/
+#resultsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px 1fr));
+}
+
+.resultItem {
+    background: #f9af2e;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.phumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/*details section*/
+#detailsContainer {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    
 
 
 
 
 
 
-
-
+}
