@@ -354,3 +354,13 @@ border-radius: 10px;
     
 
 }
+
+.thumbnail{
+    width: 200px;
+    height: 100px;
+}
+
+.detailImg{
+    width: 25%;
+    height: 10%;
+}
