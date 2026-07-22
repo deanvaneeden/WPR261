@@ -22,7 +22,7 @@ const legends = [
             "Strong supporter of diversity and women’s rugby."
         ],
         origin: "Stellenbosch, South Africa",
-        image: Riley.jpg
+        image: chris.jpg
     }
 ];
 
