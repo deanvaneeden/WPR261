@@ -27,13 +27,13 @@ const legends = [
 ];
 
 // DOM elements
-const searchBar = document.getElementById("search-bar");
-const searchButton = document.getElementById("search-button");
-const resultsContainer = document.getElementById("results-container");
-const detailsContainer = document.getElementById("details-container");
-const favouritesContainer = document.getElementById("favourites-container");
-const comparisonContainer = document.getElementById("comparison-container");
-const printButton = document.getElementById("print-button");
+const searchBar = document.getElementById("searchBar");
+const searchButton = document.getElementById("searchButton");
+const resultsContainer = document.getElementById("resultsContainer");
+const detailsContainer = document.getElementById("detailsContainer");
+const favouritesContainer = document.getElementById("favouritesContainer");
+const comparisonContainer = document.getElementById("comparisonContainer");
+const printButton = document.getElementById("printButton");
 
 let favourites = [];
 let comparison = [];
@@ -49,28 +49,28 @@ searchButton.addEventListener("click", () => {
 
     filtered.forEach(legend => {
         const item = document.createElement("div");
-        item.classList.add("result-item");
+        item.classList.add("resultItem");
         item.innerHTML = `
             <img src="${legend.image}" alt="${legend.name}" class="thumbnail">
             <h3>${legend.name}</h3>
             <p>${legend.description}</p>
-            <button class="details-btn">View Details</button>
-            <button class="fav-btn">Add to Favourites</button>
-            <button class="compare-btn">Compare</button>
+            <button class="detailsBtn">View Details</button>
+            <button class="favBtn">Add to Favourites</button>
+            <button class="compareBtn">Compare</button>
         `;
 
         // Details button
-        item.querySelector(".details-btn").addEventListener("click", () => {
+        item.querySelector(".detailsBtn").addEventListener("click", () => {
             showDetails(legend);
         });
 
         // Favourites button
-        item.querySelector(".fav-btn").addEventListener("click", () => {
+        item.querySelector(".favBtn").addEventListener("click", () => {
             addFavourite(legend);
         });
 
         // Compare button
-        item.querySelector(".compare-btn").addEventListener("click", () => {
+        item.querySelector(".compareBtn").addEventListener("click", () => {
             addComparison(legend);
         });
 
@@ -82,7 +82,7 @@ searchButton.addEventListener("click", () => {
 function showDetails(legend) {
     detailsContainer.innerHTML = `
         <h3>${legend.name}</h3>
-        <img src="${legend.image}" alt="${legend.name}" class="detail-img">
+        <img src="${legend.image}" alt="${legend.name}" class="detailImg">
         <p><strong>Description:</strong> ${legend.description}</p>
         <ul>
             ${legend.facts.map(fact => `<li>${fact}</li>`).join("")}
@@ -103,7 +103,7 @@ function renderFavourites() {
     favouritesContainer.innerHTML = "";
     favourites.forEach(fav => {
         const favItem = document.createElement("div");
-        favItem.classList.add("favourite-item");
+        favItem.classList.add("favouriteItem");
         favItem.textContent = fav.name;
         favouritesContainer.appendChild(favItem);
     });
@@ -123,7 +123,7 @@ function renderComparison() {
     comparisonContainer.innerHTML = "";
     comparison.forEach(comp => {
         const compItem = document.createElement("div");
-        compItem.classList.add("comparison-item");
+        compItem.classList.add("comparisonItem");
         compItem.innerHTML = `
             <h3>${comp.name}</h3>
             <p>${comp.description}</p>

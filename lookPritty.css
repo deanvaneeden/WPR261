@@ -1,8 +1,14 @@
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: #fdf6f0;
+    background-color: #234f17;
+    background-image: url("background2.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     color: #333;
     padding: 20px;
+    
 }
 
 /*header*/
@@ -70,21 +76,16 @@ section h2 {
 }
 
 
+
 #comparasonsection{
     grid-template-columns: 2;
     display: flex;
 }
 
-#compareblocksonhomepage{
-    
-    
+#compareblocksonhomepage{   
     width: 100%;
     height: 600px;
-    object-fit: cover;
-
-    
-    
-    
+    object-fit: cover;    
 }
 
 
@@ -181,50 +182,93 @@ section h2 {
     border-radius: 10px;
 }
 
-
-#compairbody h1{
+/* Comparison Page Styling */
+#compairbody h1 {
     text-align: center;
-    font-family: sans-serif;    
-}
-#comparepage{
     font-family: sans-serif;
-    color: black;
-    background-color: hsl(0, 0%, 88%);
-    padding: 7%;
-    border-radius: 5px;
+    color: #800000; 
+    margin-bottom: 20px;
 }
+
+#comparepage {
+    font-family: sans-serif;
+    color: #333;
+    background-color: #f0f0f0;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
 #dropdownmenu {
-    
-    display:flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 1%;
-}
-#dropdownmenu select {
-    font-size: large;
-    background-color: white;  
-    color: black;  
-    padding: 0.5% 1%;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-}
-#comparetiles{
     display: flex;
     justify-content: center;
-    gap: 1%;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+#dropdownmenu select {
+    font-size: 1rem;
+    background-color: white;
+    color: #333;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+#dropdownmenu select:hover {
+    border-color: #800000;
+    box-shadow: 0 0 5px rgba(128,0,0,0.5);
+}
+
+#comparetiles {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
     flex-wrap: wrap;
 }
-#compareblock{
+
+.compareblock {
     background-color: white;
     border: 2px solid #a1a1a1;
-    border-radius: 10px;
-    padding: 1.5rem;
-    width: 260px;
+    border-radius: 12px;
+    padding: 20px;
+    width: 280px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
-#detailbody{
 
+.compareblock select {
+    font-size: 1rem;
+    background-color: #fff;
+    color: #333;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    margin-bottom: 10px;
 }
+
+.compareblock h3 {
+    color: #800000;
+    margin-bottom: 10px;
+}
+
+.compareblock p {
+    margin: 8px 0;
+    font-size: 0.95rem;
+}
+
+.compareblock:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+    border-color: #FFD700; 
+}
+
+/* Detail Page Styling */
 #detailpage{
 background-color:  hsl(0, 0%, 88%);
 margin-top: 1%;
@@ -259,6 +303,7 @@ border-radius: 10px;
     justify-content: center;
     list-style-type: none;
 }
+
 #detailwindow img{
     background-color: white;
     width: 50%;
@@ -268,8 +313,12 @@ border-radius: 10px;
     object-fit: cover;
     border-radius: 8px;
 }
+
 #favButton{
-    position: absolute;    
+    position: relative; /* absolute */
+    margin-top: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;    
 }
 
 #fullinfoblock{
@@ -282,10 +331,6 @@ border-radius: 10px;
     padding-top: 2%;
 }
 
-
-#explbody{
-    
-}
 #explainsections{
     text-align: center;
     font-family: sans-serif;
@@ -294,9 +339,11 @@ border-radius: 10px;
     border-radius: 10px;
     padding: 5px 5px;
 }
+
 #explainsections h1{
     text-align: center;
 }
+
 #explainsections p{
     margin: 5%;
 }

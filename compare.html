@@ -16,62 +16,38 @@
             <li><a href="explaining.html">Explain</a></li>
         </ul>    
     </nav>
+    <!-- Page Title -->
+    
 
-    <div>
-        <h1>Comparison section</h1>
-    </div>
-
-<div>
+    <!-- Comparison Content -->
+    
     <div id="comparepage">
-        <div id="dropdownmenu">
-            <select>
-                <option>Chris Norton</option>
-                <option>Riley Norton</option>
-                
-            </select>
-            <select>
-                <option>Riley Norton</option>
-                <option>Chris Norton</option>
-                
-            </select>
+        <div>
+        <h1>Comparison Section</h1>
         </div>
         <div id="comparetiles">
-            <div id="compareblock">
+        <!-- Tile 1 -->
+        <div class="compareblock">
+            <select id="compareSelect1">
+                <option value="chris">Chris Norton</option>
+                <option value="riley">Riley Norton</option>
+            </select>
+            <div id="compareTile1"></div>
+        </div>
 
-                <h3>
-                    Chris Norton
-                </h3>
-                <p>
-                    Position: Hooker
-                </p>
-                <p>
-                    Years Active: 1991-2003
-                </p>
-                <p>
-                    Highlights: international tours, Club Championships
-                </p>
-        
-            </div>
-            <div id="compareblock">
-                <div class="comparisonItem">
-                <h3>
-                    Riley Norton
-                </h3>
-                <p>
-                    Position: Forward
-                </p>
-                <p>
-                    Years Active: 2020-Present
-                </p>
-                <p>
-                    Highlights: Varsity Cup squad, balancing study and sport
-                </p>
-            </div>
-            </div>
+        <!-- Tile 2 -->
+        <div class="compareblock">
+            <select id="compareSelect2">
+                <option value="riley">Riley Norton</option>
+                <option value="chris">Chris Norton</option>
+            </select>
+            <div id="compareTile2"></div>
+        </div>
         </div>
     </div>
-</div>
 
+    <script src="comparason.js"></script>
 
+    <button onclick="window.print()">Print</button>
 </body>
 </html>

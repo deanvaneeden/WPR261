@@ -10,49 +10,39 @@
     <nav id="navbar">
         <ul id="navlinks">
             <li><a href="index.html">Home</a></li>
-            <li><a href="FavouriteSection.html">Fav</a></li>
+            <li><a href="FavouriteSection.html">Favourites</a></li>
             <li><a href="compare.html">Compare Page</a></li>
             <li><a href="detailedInformationSection.html">Details</a></li>
             <li><a href="explaining.html">Explain</a></li>
         </ul>    
     </nav>
 
-    <div id="detailpage">
-        <div id="detitems">
-            <a href="" id="itemhyperlnk">Riley and Chris Norton</a>
+    <div id="detailsection">
+        <div id="detitems">    
+            <button class="itemlink" data-item="item1">Riley and Chris Norton</button>
+            <button class="itemlink" data-item="item2">Dr. Aisha Mbeki</button>
+            <button class="itemlink" data-item="item3">Daniel Jacobs</button>
         </div>
+
         <div id="detailwindow">   
-            <img src="WhatsApp Image 2026-07-15 at 18.01.37.jpeg" alt="1">
-           
-           <div id="fullinfoblock">
-            <h1>Chris Norton</h1>
-            <p><strong>Full Description:</strong> Chris Norton, a Maties Rugby hooker from 1991-2003, passed his passion for rugby to his son Riley, who now plays in the Varsity Cup squad. Their story reflects Stellenboschs deep rugby culture and family legacy.
-            <h3>intresting facts</h3>
-            <ul>
-                <li>
-                    Chris toured internationally, playing in Argentina, Japan, and England.
-                </li>
-                <li>
-                    Riley balanced academics with high-performance rugby at Stellenbosch University
-                </li>
-                <li>
-                    Their bond shows how sport unites generations and builds comunilty identity
-                </li>
-
-
-
-            </ul>
-            <div>
-                <p>
-                <strong>Origin:</strong> Stellenbosch, Western Cape, South Africa
-            </p>
-                <p>aditional information placehokder</p> 
+            
+            <div id="fullinfoblock">
+                <img id="detailImg" src="" alt=" ">
+                <button class="favButton" id="detailFavButton" type="button">☆</button>
+                <h1 id="detailTitle"></h1>
+                <p id="detailScript"></p>
+                <h3>intresting facts</h3>
+                <ul id="detailFacts"></ul>
+                <div>
+                    <p>location: <span id="detailLocation"></span></p>
+                    <p>additional info: <span id="detailExtra"></span></p> 
+                </div>
             </div>
         </div>
-            </div>
-        <button id="favButton">☆</button>
+        
     </div>
     
-
+<script src="detailedinfo.js"></script>
+<script src="favourites.js"></script>
 </body>
 </html>
