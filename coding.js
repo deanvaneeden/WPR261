@@ -10,7 +10,7 @@ const legends = [
             "Known for grit, teamwork, and inclusivity in rugby."
         ],
         origin: "Stellenbosch, South Africa",
-        image: "images/chris.jpg"
+        image: Riley.jpg
     },
     {
         id: 2,
@@ -22,7 +22,7 @@ const legends = [
             "Strong supporter of diversity and women’s rugby."
         ],
         origin: "Stellenbosch, South Africa",
-        image: "images/riley.jpg"
+        image: Riley.jpg
     }
 ];
 
